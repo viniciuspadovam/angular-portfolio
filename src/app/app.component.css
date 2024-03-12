@@ -1,10 +1,11 @@
-main {
+.main-content {
   display: flex;
   align-items: center;
   column-gap: 10rem;
 }
 
 .presentation {
+  min-width: 480px;
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
@@ -12,15 +13,17 @@ main {
 
 header > h1 {
   font-size: 2rem;
+  color: #6E07F3;
 }
 
 header > h3 {
   font-size: 1.5rem;
   margin-top: .8rem;
+  color: #6E07F3;
 }
 
 header > .description {
-  max-width: 300px;
+  max-width: 400px;
   margin-top: .5rem;
 }
 
@@ -47,11 +50,13 @@ nav ul > li:hover {
 
 nav ul > li.active * {
   font-weight: bold;
+  color: #6E07F3;
   transition: all .2s ease;
 }
 
 nav ul > li.active > .nav-indicator {
   width: 2.2rem;
+  background: #6E07F3;
 }
 
 nav ul > li > .nav-indicator {
@@ -61,9 +66,13 @@ nav ul > li > .nav-indicator {
 }
 
 .social-media svg {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-right: .5rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: .8rem;
+  fill: #6E07F3;
 }
 
+.portfolio-content {
+  min-width: 620px;
+}
 /* #6E07F3 */

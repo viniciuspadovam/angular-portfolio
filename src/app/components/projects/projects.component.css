@@ -1,0 +1,4 @@
+article:not(:first-child) {
+  min-width: 580px;
+  margin-top: .8rem;
+}
