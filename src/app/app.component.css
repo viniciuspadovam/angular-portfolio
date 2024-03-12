@@ -1,6 +1,7 @@
 main {
   display: flex;
-  column-gap: 12rem;
+  align-items: center;
+  column-gap: 10rem;
 }
 
 .presentation {

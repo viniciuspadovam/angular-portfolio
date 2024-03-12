@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
-type navActiveOpt = 'about' | 'experience' | 'projects';
+import { AboutComponent } from './components/about/about.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { navActiveOpt } from './model/CustomTypes';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AboutComponent, ExperienceComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

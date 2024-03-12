@@ -40,5 +40,13 @@
     </footer>
   </section>
 
-  <section>nav information</section>
+  <section>
+    @if(navActive === 'about') {
+      <app-about></app-about>
+    } @else if(navActive === 'experience') {
+      <app-experience></app-experience>
+    } @else if(navActive === 'projects') {
+      <app-projects></app-projects>
+    }
+  </section>
 </main>
