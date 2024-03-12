@@ -1,0 +1,68 @@
+main {
+  display: flex;
+  column-gap: 12rem;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+header > h1 {
+  font-size: 2rem;
+}
+
+header > h3 {
+  font-size: 1.5rem;
+  margin-top: .8rem;
+}
+
+header > .description {
+  max-width: 300px;
+  margin-top: .5rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul > li {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: .4rem;
+  cursor: pointer;
+  transition: font-weight .1s;
+}
+
+nav ul > li:not(:first-child) {
+  margin-top: .3rem;
+}
+
+nav ul > li:hover {
+  font-weight: bold;
+}
+
+nav ul > li.active * {
+  font-weight: bold;
+  transition: all .2s ease;
+}
+
+nav ul > li.active > .nav-indicator {
+  width: 2.2rem;
+}
+
+nav ul > li > .nav-indicator {
+  height: 1px;
+  width: 1rem;
+  background: #000;
+}
+
+.social-media svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: .5rem;
+}
+
+/* #6E07F3 */
