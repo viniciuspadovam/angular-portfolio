@@ -42,11 +42,11 @@
 
   <section class="portfolio-content">
     @if(navActive === 'about') {
-      <app-about></app-about>
+      <app-about @fadeInOut></app-about>
     } @else if(navActive === 'experience') {
-      <app-experience></app-experience>
+      <app-experience @fadeInOut></app-experience>
     } @else if(navActive === 'projects') {
-      <app-projects></app-projects>
+      <app-projects @fadeInOut></app-projects>
     }
   </section>
 </div>
